@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.instructions {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.image-cell {
+    border: 2px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-cell.selected {
+    border-color: green;
+    background-color: rgba(0, 255, 0, 0.2);
+}
+
+.image-cell img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.image-cell:hover {
+    transform: scale(1.1);
+}
+
+.check-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.check-button:hover {
+    background-color: #45a049;
+}
+
+.feedback {
+    font-size: 18px;
+    margin-top: 20px;
+}
